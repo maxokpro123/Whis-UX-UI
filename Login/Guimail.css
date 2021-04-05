@@ -355,7 +355,10 @@ ul#list_3 {
     text-align: center;
 }
 
-.body .container .block__body .middle .middle__text,
+.body .container .block__body .middle {
+    margin-bottom: 1rem;
+}
+
 .body .container .block__body .middle .middle__visible {
     font-size: 13px;
     color: #333333;
@@ -365,17 +368,8 @@ ul#list_3 {
     border: 1px solid #dff0d8;
     color: #3c763d;
     border-radius: 5px;
-    padding: 0.5rem 7rem;
+    padding: 0.5rem 12rem;
     background-color: #dff0d8;
-}
-
-.body .container .block__body .main .main__text {
-    font-size: 15px;
-    color: #333333;
-}
-
-.body .container .block__body .main .main__text .main__text-color {
-    color: red;
 }
 
 .body .container .block__body .main .main__email {
