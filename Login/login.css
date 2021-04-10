@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -508,22 +507,22 @@ ul#list_3 {
     width: 90%;
 }
 
-.container .row .left-2 .facebook  {
+.container .row .left-2 .facebook {
     border: 1px solid #00c4ff;
     background-color: white;
     color: #f2f6f7;
     width: 100%;
 }
 
-.container .row .left-2 .google>a  {
-   color: #ee1111;
+.container .row .left-2 .google>a {
+    color: #ee1111;
 }
 
-.container .row .left-2 .google  {
-    margin-top: 10px;
+.container .row .left-2 .google {
     border: 1px solid #00c4ff;
     background-color: white;
     width: 14.6em;
+    margin-left: 2rem;
 }
 
 .container .row .right-2 button a {
@@ -691,6 +690,11 @@ ul#list_3 {
 
 .container .row .chondangky a {
     text-decoration: none;
+}
+
+.flex__dangnhap {
+    display: flex;
+    margin-top: 2rem;
 }
 
 
