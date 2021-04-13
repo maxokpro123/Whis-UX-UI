@@ -33,6 +33,7 @@ body {
     border-style: ridge;
     border: 1px solid #585d63;
     border-radius: 5px;
+    background-color: whitesmoke;
 }
 
 .box-body>input,
