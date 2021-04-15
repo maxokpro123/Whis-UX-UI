@@ -18,6 +18,23 @@ body {
     padding-right: -15px;
 }
 
+.box{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.box-body>input,
+.box-body>select{
+    border-radius: 5px;
+    border: 1px solid #cbd3db;
+    width: 225px;
+    height: 30px;
+}
+
+.box-body>label{
+    padding: 20px 0 0 20px;
+}
+
 .row .titlemenu {
     display: flex;
     flex-wrap: wrap;
