@@ -135,11 +135,11 @@
                                             <li class="list-group-item"><a href="../Footer/quydinhchung.html">Chính sách
                                                     và quy định</a></li>
                                         </a>
-                                        <a href="../lienhe/lienhe.html">
-                                            <li class="list-group-item"><a href="../lienhe/lienhe.html">Liên hệ</a></li>
+                                        <a href="../lienhe/lienhe.html" data-toggle="modal" data-target="#exampleModal1" style="color: gray; text-decoration: none; font-size: 18px;">
+                                            <li class="list-group-item">Liên hệ</li>
                                         </a>
                                         <a href="../nhacungcap/nhacungcap.html">
-                                            <li class="list-group-item"><a href="../lienhe/lienhe.html">Trở thành nhà cung cấp</a></li>
+                                            <li class="list-group-item"><a href="../nhacungcap/nhacungcap.html">Trở thành nhà cung cấp</a></li>
                                         </a>
                                     </ul>
                                 </nav>
@@ -150,6 +150,57 @@
                         </a>
                     </div>
                 </div>
+                
+                <!-- Liên hệ -->
+                <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Liên hệ với chúng tôi qua email</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                            <div class="modal-body">
+                                <div class="box">
+                                    <div class="box-body">
+                                        <label for="name">Họ và tên</label>
+                                        <span style="color: red;">*</span>
+                                        <input type="text" id="name" name="name"><br>
+                                        
+                                        <label for="email" style="margin-left:31px">Email</label>
+                                        <span style="color: red;">*</span>
+                                        <input type="email" id="email" name="email"><br>
+                                        
+                                        <label for="sdt" style="margin-left:-23px">Số điện thoại</label>
+                                        <span style="color: red;">*</span>
+                                        <input type="text" id="sdt" name="sdt"><br>
+                                        
+                                        <label for="theme" style="margin-left:20px">Chủ đề</label>
+                                        <span style="color: red;">*</span>
+                                        <select name="" id="theme">
+                                            <option value="1">Liên hệ - Góp ý</option>
+                                            <option value="1">Thông tin đặt phòng</option>
+                                            <option value="1">Đối tác Khách Sạn</option>
+                                            <option value="1">Đối tác Đại Lý</option>
+                                            <option value="1">Đối tác Doanh Nghiệp</option>
+                                            <option value="1">Đối tác Quảng Cáo</option>
+                                        </select>
+                                        <br>
+                                        <label for="nd" style="margin-left:4px">Nội dung</label>
+                                        <span style="color: red;">*</span>
+                                        <input type="text" id="nd" name="nd" style="height: 87px; padding-bottom: 40px;"><br>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                          <button type="button" class="btn btn-primary">Gửi</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+    
             </div>
         </div>
     </section>
