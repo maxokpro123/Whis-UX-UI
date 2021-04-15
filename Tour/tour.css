@@ -420,9 +420,35 @@ ul#list_3 {
     transition: .5s;
 }
 
-.fa-calendar {
-    margin-left: 5px;
-    font-size: 14px;
+.row .col-xl-3 .data .icon {
+    margin-top: 40px;
+    font-size: 30px !important;
+    color: #cfcf11c7 !important;
+}
+
+.row .col-xl-3 .data .fa-star {
+    color: yellow !important;
+    font-size: 18px !important;
+    cursor: pointer;
+    transition: 0.5s all ease;
+}
+
+.box_star {
+    display: flex;
+}
+
+.box_star .price {
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+.row .col-xl-3 .data .fa-star:hover {
+    color: gray !important;
+}
+
+.box_star .price .color__price {
+    color: #00b8ffbf;
 }
 
 .fa-calendar>span {
@@ -638,6 +664,59 @@ ul#list_3 {
 .container .row .data .tag-a-7>.fa-angle-double-right {
     margin-left: 4px;
     color: #00adef;
+}
+
+.head .background-head .combo {
+    text-align: center;
+}
+
+.head .background-head .title {
+    font-size: 38px;
+    font-weight: bold;
+    color: white;
+    padding-top: 5rem;
+}
+
+.head .background-head .text {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.head .background-head {
+    width: 100%;
+    background-image: url(./images/backgr.png);
+    background-size: contain;
+    height: 350px;
+    background-repeat: no-repeat;
+}
+
+.row .data-2 .lienhe {
+    width: 100%;
+    padding: 3rem 0.5rem;
+}
+
+.row .data-2 .button {
+    text-align: center;
+}
+
+.row .data-2 .button .lienhe__link {
+    border: 1px solid #47c4f0;
+    background-color: #47c4f0;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.5s all ease;
+}
+
+.row .data-2 .button .lienhe__link:hover {
+    background-color: #00a6ff;
+}
+
+.row .data {
+    text-overflow: ellipsis;
 }
 
 .footer {
