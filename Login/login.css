@@ -514,8 +514,16 @@ ul#list_3 {
     width: 100%;
 }
 
+.container .row .left-2 {
+    padding: 0 0.5rem;
+}
+
 .container .row .left-2 .google>a {
     color: #ee1111;
+}
+
+.container .row .left-2 .fa-google {
+    margin-left: 5.2rem;
 }
 
 .container .row .left-2 .google {
@@ -695,6 +703,37 @@ ul#list_3 {
 .flex__dangnhap {
     display: flex;
     margin-top: 2rem;
+}
+
+.modal .modal-title {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.modal .modal-title .fa-edit {
+    color: #004eff;
+}
+
+.modal .modal-title .text .text__color {
+    font-weight: bold;
+}
+
+.modal .modal-title .logo {
+    width: 50px;
+    height: 60px;
+}
+
+.modal .modal-body>h5 {
+    padding-top: 1rem;
+}
+
+.modal .modal-body .flex {
+    display: flex;
+}
+
+.modal .modal-body .flex .flex__text-2 {
+    padding-left: 3rem;
 }
 
 

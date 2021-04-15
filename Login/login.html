@@ -96,10 +96,14 @@
                         <div class="container flex__dangnhap">
                             <div class="row">
                                 <div class="left-2">
-                                    <button type="button" class="btn btn-light facebook"><a href="#"><div class="fa fa-facebook-square"></div> Đăng nhập bằng Facebook</a></button>
+                                    <button type="button" class="btn btn-primary fa fa-facebook" data-toggle="modal" data-target="#exampleModal">
+                                       Đăng nhập với facebook
+                                      </button>
                                 </div>
                                 <div class="left-2">
-                                    <button type="button" class="btn btn-light google"><a href="#"><div class="fa fa-google-plus-square"></div> Đăng nhập bằng Google</a></button>
+                                    <button type="button" class="btn btn-primary fa fa-google" data-toggle="modal" data-target="#exampleModall">
+                                        Đăng nhập với Google
+                                      </button>
                                 </div>
                             </div>
                         </div>
@@ -219,6 +223,62 @@
         </div>
     </div>
 
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title" id="exampleModalLabel">
+                        <img src="./images/face.jpg" alt="" class="logo">
+                        <p class="text"><span class="text__color"> Facebook</span> sẽ đăng nhập vào tài khoản của bạn.</p>
+                        <p class="text fa fa-edit"> Chỉnh sửa</p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Tiếp tục với tên của bạn.
+                      </button>
+                    <h5>Lúc khác</h5>
+                    <div class="flex">
+                        <p class="flex__text">Điều khoản ứng dụng</p>
+                        <p class="flex__text flex__text-2">Chính sách quyền riêng tư</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModall" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title" id="exampleModalLabel">
+                        <img src="./images/google.png" alt="" class="logo">
+                        <p class="text"><span class="text__color"> Google</span> sẽ đăng nhập vào tài khoản của bạn.</p>
+                        <p class="text fa fa-edit"> Chỉnh sửa</p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Tiếp tục với tên của bạn.
+                      </button>
+                    <h5>Lúc khác</h5>
+                    <div class="flex">
+                        <p class="flex__text">Điều khoản ứng dụng</p>
+                        <p class="flex__text flex__text-2">Chính sách quyền riêng tư</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
 
