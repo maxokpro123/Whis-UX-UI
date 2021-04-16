@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./qltk.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <title>Tài khoản</title>
+
+</head>
+
+<body>
+    <section class="header">
+        <div class="container">
+            <div class="row">
+                <div class="titlemenu col-lg-8">
+                    <h2><a href="../Home/index.html">Hotel Tourist</a></h2>
+                    <nav class="menu">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="icon-all fa fa-building"></div>
+                                </a>
+                                <a class="ks" href="#"> Khách sạn</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon-all fa fa-bookmark"></div>
+                                </a>
+                                <a class="cn" href="../CamNang/camnang.html"> Cẩm nang du lịch</a>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="login col-lg-4">
+                    <div class="image-phone">
+                        <img src="./images/247.jpg" alt="">
+                        <div class="phone">
+                            <p id="Hanoi">
+                                <strong>Hà Nội</strong>"012 3845 6789"
+                            </p>
+                            <p id="TPHCM">
+                                <strong>TPHCM</strong>"012 345 6789"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="three-icon">
+                        <a href="#" type="button" id="danhGia-btn" data-toggle="modal" data-target="#exampleModal">
+                            <div class="login feedback fa fa-comments"></div>
+                        </a>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content note">
+                                    <!-- <form id="form-rate"> -->
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">GÓP Ý WEBSITE</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p class="text-1">Đánh giá của bạn về website Hotel-Tourist.vn (*)</p>
+                                            
+                                            <div class="fa emoj fa-minus-circle" role="radio" name="doHaiLong" value="1" data-mk="tuong">
+                                                <p>Rất không hài lòng</p>
+                                            </div>
+                                            <div class="fa emoj fa-stop-circle" role="radio" name="doHaiLong" value="2">
+                                                <p>Không hài lòng</p>
+                                            </div>
+                                            <div class="fa emoj fa-pause-circle" role="radio" name="doHaiLong" value="3">
+                                                <p>Bình thường</p>
+                                            </div>
+                                            <div class="fa emoj fa-times-circle" role="radio" name="doHaiLong" value="4">
+                                                <p>Hài Lòng</p>
+                                            </div>
+                                            <div class="fa emoj fa-plus-circle" role="radio" name="doHaiLong" value="5">
+                                                <p>Rất Hài Lòng</p>
+                                            </div>
+
+                                            <p class="text-1">Góp ý của bạn dành cho Hotel-Tourist.vn (*)</p>
+                                            <label class="check">
+                                                <p class="text-2">Góp ý Website</p>
+                                                <input class="int" type="radio" checked="checked" value="Góp ý Website" name="gopY">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="check">
+                                                <p class="text-2">Liên hệ</p>
+                                                <input class="int" type="radio" checked="checked" value="Liên hệ" name="gopY">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="check">
+                                                <p class="text-2">Đối tác khách sạn</p>
+                                                <input class="int" type="radio" checked="checked" value="Đối tác khách sạn" name="gopY">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="check">
+                                                <p class="text-2">Đối tác Maketing</p>
+                                                <input class="int" type="radio" checked="checked" value="Đối tác Maketing" name="gopY">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <input name="cauHoi" id="placetext-1" class="input" placeholder="Bạn muốn hỏi?...">
+                                            <p>Hotel-Tourist có thể liên hệ với bạn qua:</p>
+                                            <input type="text" id="email_sdt_lienhe" class="input-1" placeholder="Email/Số điện thoại của bạn">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-light" data-dismiss="modal">Đóng</button>
+                                            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="return danhGia();">Gửi</button>
+                                        </div>
+                                    <!-- </form> -->
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="login log fa fa-user-circle" id="login">
+                                <nav class="list" id="list">
+                                    <ul class="list-group">
+                                        <a href="../Login/login.html">
+                                            <li class="list-group-item"><a href="../Login/login.html">Đăng nhập và Đăng
+                                                    ký</a></li>
+                                        </a>
+                                        <a href="../Footer/quydinhchung.html">
+                                            <li class="list-group-item"><a href="../Footer/quydinhchung.html">Chính sách
+                                                    và quy định</a></li>
+                                        </a>
+                                        <a href="../lienhe/lienhe.html" data-toggle="modal" data-target="#exampleModal1" style="color: gray; text-decoration: none; font-size: 18px;">
+                                            <li class="list-group-item">Liên hệ</li>
+                                        </a>
+                                        <a href="../nhacungcap/nhacungcap.html">
+                                            <li class="list-group-item"><a href="../nhacungcap/nhacungcap.html">Trở thành nhà cung cấp</a></li>
+                                        </a>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="login log arrow fa fa-sort-down" id="arrow"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="body" id="body">
+        <div class="holder">
+            <div class="container">
+                <div id="tabs" class="tabs">
+                    <h4 style="margin: 10px 0 10px 30px;">TÀI KHOẢN</h4>
+                    <ul>
+                      <li><a href="#tabs-1">Thông tin chung</a></li>
+                      <li><a href="#tabs-2">Thay đổi thông tin</a></li>
+                      <li><a href="#tabs-3">Thay đổi mật khẩu</a></li>
+                      <li><a href="#tabs-4">Thẻ thành viên</a></li>
+                      <li><a href="#tabs-5">Điểm thưởng VPoint</a></li>
+                      <li><a href="#tabs-6">Liên kết ví</a></li>
+                    </ul>
+                    <div id="tabs-1">
+                        <h2 style="text-align: center;">THÔNG TIN CHUNG</h2>
+                        <hr style="border: 1px solid #44c3ee;">
+                        <img src="../quanlytoaikhoan/images/00.jpg" alt="" style="width: 80px; height: 80px; margin-left: 265px;"><br>
+                        <button type="button" class="btn btn-secondary">Thay đổi</button><br>
+                        <p>Xin chào <b>Nguyễn Hữu Tường</b></p>
+                        <p><b>Thông tin tài khoản</b></p>
+                        <p><b>Họ và tên:</b> Nguyễn Hữu Tường</p>
+                        <p><b>Username:</b> WhisTuong</p>
+                        <p><b>Email:</b> Whis@gamil.com</p>
+                        <p><b>Facebook:</b> Nguyễn Hữu Tường</p>
+                        <p><b>Số điện thoại:</b> 0384491959</p>
+                        <p><b>Địa chỉ:</b> No Address</p>
+                    </div>
+
+                    <div id="tabs-2">
+                        <h2 style="text-align: center;">THAY ĐỔI THÔNG TIN</h2>
+                        <hr style="border: 1px solid #44c3ee;">
+                        <p style="color: red;">Với trang này, bạn có thể thay đổi các thông tin trong tài khoản của bạn</p>
+                        <div class="box-body">
+                            <label for="name" style="margin-left: -15px; font-size: smaller;">Họ và tên:</label>
+                            <input type="text" id="name" placeholder=" Nguyễn Hữu Tường" style="font-weight: bold;">
+                            <label for="name1" style="margin-left: 30px; font-size: smaller;">Username:</label>
+                            <input type="text" id="name1" placeholder=" WhisTuong" style="font-weight: bold;"><br>
+                            
+                            <label for="qg" style="margin-left: -15px; font-size: smaller;">Email:</label>                          
+                            <input type="text" id="qg" placeholder=" Whis@gamil.com" style="margin-left: 30px; font-weight: bold;">                           
+                            <label for="sdt" style="margin-left: 30px; font-size: smaller;">Điện thoại:</label>
+                            <input type="text" id="sdt" placeholder=" 0384491959" style="font-weight: bold;"><br>
+    
+                            <label for="fb" style="margin-left: -15px; font-size: smaller;">Facebook:</label>
+                            <input type="text" id="fb" placeholder=" Nguyễn Hữu Tường" style="margin-left: 2px; font-weight: bold;"> 
+                            <label for="dc" style="margin-left: 30px; font-size: smaller;">Địa chỉ:</label>
+                            <input type="text" id="dc" placeholder=" No Address" style="margin-left: 25px; font-weight: bold;"><br>
+
+                            <label for="" style="margin-left: -15px; font-size: smaller;">Giới tính:</label>
+                            <input type="text" id="fb" placeholder=" Nam" style="margin-left: 8px; font-weight: bold;"> 
+                        </div>
+                        <button type="button" class="btn btn-secondary" style="margin-left: 29em">Sửa</button>
+                        <button type="button" class="btn btn-success">Lưu</button>
+                    </div>
+
+                    <div id="tabs-3">
+                        <h2 style="text-align: center;">THAY ĐỔI MẬT KHẨU</h2>
+                        <hr style="border: 1px solid #44c3ee;">
+                        <label for="name" style="margin-left: 50px; "><b>Mật khẩu cũ:</b></label>
+                        <input type="text" id="name" style="margin-left: 144px; border-radius: 5px; border: 1px solid gray;"><br>
+                        <label for="name1" style="margin-left: 50px; "><b>Mật khẩu mới:</b></label>
+                        <input type="text" id="name1" style="margin-left: 129px; border-radius: 5px; border: 1px solid gray;"><br> 
+                        <label for="qg" style="margin-left: 50px; "><b>Xác nhận mật khẩu mới:</b></label>                          
+                        <input type="text" id="qg" style="margin-left: 30px; border-radius: 5px; border: 1px solid gray;"><br>
+                        <button type="button" class="btn btn-warning" style="margin-left: 12em;">Thay đổi mật khẩu</button>
+                    </div>
+
+                    <div id="tabs-4">
+                        <h2 style="text-align: center;">THẺ THÀNH VIÊN</h2>
+                        <hr style="border: 1px solid #44c3ee;">
+                        <P><b>Cấp độ thẻ:</b> Thành viên Vàng</P>
+                        <span style="margin-left: 2em">Bạc</span> <span style="margin-left: 13em">Vàng</span> <span style="margin-left: 11em">Kim cương</span>
+                        <input type="range" class="form-control-range">
+                        <span style="margin-left: 1.5em">1000</span> <span style="margin-left: 12.5em">5000</span> <span style="margin-left: 12em">10000</span>
+                        <p style="margin-top: 10px; margin-bottom: 0;"><b>Quản lý thẻ:</b></p>
+                        <span style="margin-left: 2.2em">Số thẻ</span> <span style="margin-left: 10em">Ngày đăng kí</span> <span style="margin-left: 6em">Ngày hết hạn</span>
+                        <span style="color: gray;">957954516548</span> <span style="margin-left: 8.5em; color: gray;">15/4/2021</span> <span style="margin-left: 7.5em; color: gray;">15/4/2022</span>
+                    </div> 
+
+                    <div id="tabs-5">
+                        <h2 style="text-align: center;">ĐIỂM THƯỞNG VPOINT</h2>
+                        <hr style="border: 1px solid #44c3ee;">
+                        <p style="margin-bottom: 0"><b>TÓM TẮT VPOINT</b></p>
+                        <span style="font-size: smaller;">Vpoint có thể dùng:</span> <span style="color: rgb(87, 230, 98);">100 Vpoint</span><br>
+                        <span style="font-size: smaller;">Vpoint chờ kích hoạt:</span> <span>0 Vpoint</span><br>
+                        <span style="font-size: smaller;">Vpoint sẽ hết hạn:</span> <span style="color: red;">0 Vpoint</span><br>
+
+                        <p style="margin-bottom: 0; margin-top: 5px;"><b>KHÁCH HÀNG CHUẨN</b></p>
+                        <span style="font-size: smaller;">Tổng giá tích lũy:</span> <span>2.000.000 đ</span><br>
+                        <span style="font-size: smaller;">Giá tích lũy trong tháng:</span> <span>0 đ</span><br>
+                        <span style="font-size: smaller;">Quyền lợi Vpoint:</span> <span>3% giá trị đơn phòng</span><br>
+                        <span style="color: rgb(87, 230, 98); font-style: italic; font-size: smaller;">Tích lũy thêm 7.000.000đ để nâng hạng khách hàng Vàng</span>
+
+                        <p style="margin-bottom: 0; margin-top: 5px;"><b>LỊCH SỬ GIAO DỊCH</b></p>
+                        <span style="font-size: smaller;">Thời gian giao dịch:</span><br>
+                        <input type="date"> <input type="date">
+                        <button type="button">TÌM</button>
+                    </div>
+
+                    <div id="tabs-6">
+                        <h2 style="text-align: center;">LIÊN KẾT VÍ (MY CREDITS)</h2>
+                        <hr style="border: 1px solid #44c3ee;">
+                        <div class="box">
+                            <label for="name" style="margin-left: 50px; "><b>Họ và tên:</b></label>
+                            <input type="text" id="name" placeholder=" Nguyễn Hữu Tường" style="margin-left: 70px; border-radius: 5px; border: 1px solid gray; font-weight: bold;"><br>
+
+                            <label for="name" style="margin-left: 50px; "><b>Email:</b></label>
+                            <input type="text" id="name" placeholder=" Whis@gmail.com" style="margin-left: 110px; border-radius: 5px; border: 1px solid gray; font-weight: bold;"><br>
+
+                            <label for="name" style="margin-left: 50px; "><b>Số điện thoại:</b></label>
+                            <input type="text" id="name" placeholder=" Nhập số điện thoại để nhận mã OTP" style="margin-left: 35px; border-radius: 5px; border: 1px solid gray; width: 350px;"><br>
+                            <span style="color: #44c3ee; font-size: smaller; font-style: italic; margin-left: 100px;">Điều khoản và điều kiện liên kết ví (My Credits)</span>
+                            <button type="button" class="btn btn-secondary" style="margin-left: 12em; margin-top: 10px;">TIẾP TỤC</button>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <script src="http://hocwebgiare.com/thiet_ke_web_chuan_demo/Bootstrap_TouchSpin/js/jquery.bootstrap-touchspin.js">
+    </script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="./wow.min.js"></script>
+    <script src="./wow.js"></script>
+    <script src="./qltk.js"></script>
+
+
+
+
+</body>
+
+</html>
