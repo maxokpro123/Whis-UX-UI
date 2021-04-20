@@ -514,6 +514,10 @@ ul#list_3 {
     width: 100%;
 }
 
+.container .row .left-face {
+    margin-left: -180px;
+}
+
 .container .row .left-2 {
     padding: 0 0.5rem;
 }
@@ -734,6 +738,15 @@ ul#list_3 {
 
 .modal .modal-body .flex .flex__text-2 {
     padding-left: 3rem;
+}
+
+.left__2-1 {
+    margin-top: -50px;
+    margin-left: -8px;
+}
+
+.btn {
+    line-height: 1.25;
 }
 
 
