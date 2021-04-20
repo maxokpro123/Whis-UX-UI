@@ -728,12 +728,42 @@ ul#list_3 {
     height: 60px;
 }
 
+.modal-body .box {
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: lightblue;
+}
+
+.modal-body .box input {
+    border-radius: 5px;
+    outline: none;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.modal-body .box .loginformatkhau {
+    margin: 20px 0;
+}
+
+.modal-title .color-zalo {
+    font-size: 25px;
+}
+
+.modal-title .text {
+    text-align: center;
+}
+
 .modal .modal-body>h5 {
     padding-top: 1rem;
 }
 
 .modal .modal-body .flex {
     display: flex;
+}
+
+.row .google {
+    margin-left: 14px;
 }
 
 .modal .modal-body .flex .flex__text-2 {
