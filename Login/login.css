@@ -779,6 +779,33 @@ ul#list_3 {
     line-height: 1.25;
 }
 
+#tabs-2 .QR .QRcode {
+    margin-left: 30px;
+}
+
+#tabs {
+    width: 100%;
+}
+
+#tabs ul {
+    display: flex;
+}
+
+#tabs ul li {
+    list-style-type: none;
+    margin-left: 75px;
+}
+
+#tabs ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#tabs ul {
+    display: flex;
+}
+
 
 /*Ä‘Äƒng kÃ­*/
 
